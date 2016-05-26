@@ -1,0 +1,21 @@
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[user]
+	name = Kevin Michael Jansen
+	email = kmjansen@gmail.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+[push]
+	default = upstream
+[merge]
+	conflictstyle = diff3
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
